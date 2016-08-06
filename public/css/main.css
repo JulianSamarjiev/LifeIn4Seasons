@@ -1,88 +1,87 @@
-@import "https://fonts.googleapis.com/css?family=Lora";
-body {
-  font-family: 'Lora', Georgia, Times, "Times New Roman", serif; }
-
-body,
-html {
-  height: 100%;
-  margin: 0;
+@import "https://fonts.googleapis.com/css?family=Cormorant+Garamond:300,500";
+.no-padding {
   padding: 0; }
 
-svg {
-  background: url("../img/spring.jpg");
-  background-size: cover;
-  width: 100%;
-  height: auto;
-  display: block;
-  margin: 10px auto; }
-  svg:hover {
-    cursor: pointer; }
-    svg:hover text {
-      transition: font-size .4s ease-in;
-      font-size: 600px; }
+body {
+  color: #555;
+  font-family: 'Cormorant Garamond', serif; }
 
-text {
-  font-size: 12px;
-  transition: font-size .4s ease-out;
-  font-weight: 900;
-  font-family: arial; }
+hr {
+  margin-top: 50px;
+  margin-bottom: 50px; }
 
-.summer svg {
-  background: url("../img/summer.jpg");
-  background-size: cover; }
+.hero {
+  text-align: center; }
+  .hero .hero-title {
+    float: left;
+    font-size: 32px;
+    padding: 20px 0 0 20px;
+    letter-spacing: 5px;
+    text-align: left; }
+    .hero .hero-title .hero-title-word {
+      color: #0fafc3; }
 
-.autumn svg {
-  background: url("../img/autumn.jpg");
-  background-size: cover; }
-
-.winter svg {
-  background: url("../img/winter.jpg");
-  background-size: cover; }
-
-.content-area {
-  margin: 20px 0;
-  font-size: 18px;
-  letter-spacing: 1px; }
-  .content-area p:first-child {
-    font-size: 24px;
-    margin-top: 30px; }
-
-.trailer-btn-wrapper {
-  margin: 50px 0 0 200px;
-  cursor: pointer;
+.ring-wrapper {
   position: relative;
-  height: 200px;
-  width: 200px;
-  border-radius: 50%;
-  background-color: #000;
-  transition: 0.2s; }
-  .trailer-btn-wrapper:hover {
-    transform: scale(1.05);
-    background-color: #fff;
-    border: 2px solid #000; }
-    .trailer-btn-wrapper:hover .trailer-btn {
-      color: #000; }
-  .trailer-btn-wrapper .trailer-btn {
-    font-size: 24px;
-    color: #fff;
+  width: 100%;
+  height: 500px;
+  margin: 0 auto; }
+  .ring-wrapper .ring {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    background: none;
-    border: none; }
+    left: 0;
+    right: 0;
+    margin: 50px auto 0;
+    width: 450px;
+    height: 430px;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    -webkit-animation: spin 6s infinite linear; }
+    .ring-wrapper .ring:nth-child(2) {
+      width: 434px;
+      height: 444px;
+      border: 1px solid rgba(0, 0, 0, 0.3); }
+    .ring-wrapper .ring:nth-child(3) {
+      width: 444px;
+      height: 438px;
+      border: 1px solid rgba(0, 0, 0, 0.4); }
+    .ring-wrapper .ring:nth-child(4) {
+      width: 443px;
+      height: 432px;
+      border: 1px solid rgba(0, 0, 0, 0.5); }
+    .ring-wrapper .ring:nth-child(5) {
+      width: 450px;
+      height: 439px;
+      border: 1px solid rgba(0, 0, 0, 0.6); }
+  .ring-wrapper .ring-text {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 230px auto 0;
+    font-size: 20px; }
+    .ring-wrapper .ring-text .ring-text-author {
+      font-size: 16px; }
 
-.social-icons img {
-  margin: 20px 10px 0 0;
-  height: 20px; }
-
-.trailer-modal {
-  background: rgba(0, 0, 0, 0.8); }
-
-.modal-content {
-  text-align: center;
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(360deg); } }
+.hero-btns button {
+  margin-top: 50px;
+  border-radius: 2px;
   background: none;
+  font-size: 18px;
   border: none;
-  -webkit-box-shadow: none;
-  box-shadow: none; }
+  padding: 10px 20px; }
+  .hero-btns button:first-child {
+    margin-right: 100px; }
+  .hero-btns button:hover {
+    background-color: #0fafc3;
+    color: #fff; }
+
+.image-wrapper img {
+  height: 500px;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%); }
 
 /*# sourceMappingURL=main.css.map */
