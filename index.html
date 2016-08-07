@@ -10,7 +10,8 @@
   </head>
   <body>
   <div class="hero">
-    <div class="hero-title">Life<br>In<br><span class="hero-title-word">Four</span><br>Seasons</div>
+    <div class="hero-title">Life<br>In<br><span class="color-teal">Four</span><br>Seasons</div>
+    <div class="hero-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil molestias, voluptatibus debitis suscipit, neque culpa provident iste odit officia, soluta consequatur deserunt incidunt. Sapiente maxime, sit quam, voluptatum tempore dicta.</div>
     <div class="ring-wrapper">
       <div class="ring"></div>
       <div class="ring"></div>
@@ -18,49 +19,63 @@
       <div class="ring"></div>
       <div class="ring"></div>
       <div class="ring-text">
-        <span>"People do not need guidance,<br>they need awakening."</span><br>
+        <span>"People do not need guidance,<br>they need <span class="color-teal">awakening</span>."</span><br>
         <span class="ring-text-author">- J. Krishnamurti</span>
       </div>
     </div>
     <div class="hero-btns">
-      <button>Teaser I</button>
-      <button>Teaser II</button>
+      <button data-toggle="modal" data-target="#teaser-one">Teaser I</button>
+      <button data-toggle="modal" data-target="#teaser-two">Teaser II</button>
     </div>
   </div>
   <div class="container">
     <hr>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi quam, asperiores consectetur dicta repudiandae ullam provident distinctio cum repellendus. Aliquid assumenda voluptate perferendis animi soluta facere placeat incidunt fugiat maxime.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi quam, asperiores consectetur dicta repudiandae ullam provident distinctio cum repellendus. Aliquid assumenda voluptate perferendis animi soluta facere placeat incidunt fugiat maxime.</p>
+    <hr>
+    <div class="row">
+      <div class="col-md-3">
+        <div class="image-wrapper">
+          <img class="img-responsive" src="public/img/spring.jpg" alt="Spring">
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="image-wrapper">
+          <img class="img-responsive" src="public/img/summer.jpg" alt="Summer">
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="image-wrapper">
+          <img class="img-responsive" src="public/img/autumn.jpg" alt="Autumn">
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="image-wrapper">
+          <img class="img-responsive" src="public/img/winter.jpg" alt="Winter">
+        </div>
+      </div>
+    </div>
   </div>
-  <div class="row">
-    <div class="col-md-3 no-padding">
-      <div class="image-wrapper">
-        <img class="img-responsive" src="public/img/spring.jpg" alt="Spring">
-      </div>
-    </div>
-    <div class="col-md-3 no-padding">
-      <div class="image-wrapper">
-        <img class="img-responsive" src="public/img/summer.jpg" alt="Summer">
-      </div>
-    </div>
-    <div class="col-md-3 no-padding">
-      <div class="image-wrapper">
-        <img class="img-responsive" src="public/img/autumn.jpg" alt="Autumn">
-      </div>
-    </div>
-    <div class="col-md-3 no-padding">
-      <div class="image-wrapper">
-        <img class="img-responsive" src="public/img/winter.jpg" alt="Winter">
+
+  <div class="modal fade" id="teaser-one" tabindex="-1" role="dialog" aria-labelledby="teaserOne">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-body">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/qQtZ8S-NzyM?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+        </div>
       </div>
     </div>
   </div>
 
-
-
-
-
-
-
-
-
+  <div class="modal fade" id="teaser-two" tabindex="-1" role="dialog" aria-labelledby="teaserTwo">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-body">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/OSAf0Ol6U9w?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>

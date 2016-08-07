@@ -5,17 +5,23 @@ $base-font-color: #555;
 $white: #fff;
 $black: #000;
 
-.no-padding {
-  padding: 0;
+.color-teal {
+  color: $teal;
 }
 
 body {
   color: $base-font-color;
   font-family: 'Cormorant Garamond', serif;
+  font-size: 20px;
 }
 hr {
   margin-top: 50px;
   margin-bottom: 50px;
+}
+button {
+  &:focus {
+    outline: none;
+  }
 }
 
 .hero {
@@ -26,9 +32,13 @@ hr {
     padding: 20px 0 0 20px;
     letter-spacing: 5px;
     text-align: left;
-    .hero-title-word {
-      color: $teal;
-    }
+  }
+  .hero-description {
+    // width: 200px;
+    float: right;
+    padding: 20px 20px 0 0;
+    text-align: right;
+    width: 200px;
   }
 }
 
@@ -73,7 +83,6 @@ hr {
     left: 0;
     right: 0;
     margin: 230px auto 0;
-    font-size: 20px;
     .ring-text-author {
       font-size: 16px;
     }
@@ -88,9 +97,8 @@ hr {
 .hero-btns {
   button {
     margin-top: 50px;
-    border-radius: 2px;
+    // border-radius: 4px;
     background: none;
-    font-size: 18px;
     border: none;
     padding: 10px 20px;
     &:first-child {
@@ -105,8 +113,19 @@ hr {
 
 .image-wrapper {
   img {
-    height: 500px;
     -webkit-filter: grayscale(100%);
     filter: grayscale(100%);
+    &:hover {
+      -webkit-filter: grayscale(0%);
+      filter: grayscale(0%);
+    }
   }
+}
+
+.modal-content {
+  background: none;
+  border-radius: 0;
+  border: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
 }

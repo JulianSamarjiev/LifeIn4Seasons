@@ -1,14 +1,18 @@
 @import "https://fonts.googleapis.com/css?family=Cormorant+Garamond:300,500";
-.no-padding {
-  padding: 0; }
+.color-teal {
+  color: #0fafc3; }
 
 body {
   color: #555;
-  font-family: 'Cormorant Garamond', serif; }
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 20px; }
 
 hr {
   margin-top: 50px;
   margin-bottom: 50px; }
+
+button:focus {
+  outline: none; }
 
 .hero {
   text-align: center; }
@@ -18,8 +22,11 @@ hr {
     padding: 20px 0 0 20px;
     letter-spacing: 5px;
     text-align: left; }
-    .hero .hero-title .hero-title-word {
-      color: #0fafc3; }
+  .hero .hero-description {
+    float: right;
+    padding: 20px 20px 0 0;
+    text-align: right;
+    width: 200px; }
 
 .ring-wrapper {
   position: relative;
@@ -56,8 +63,7 @@ hr {
     position: absolute;
     left: 0;
     right: 0;
-    margin: 230px auto 0;
-    font-size: 20px; }
+    margin: 230px auto 0; }
     .ring-wrapper .ring-text .ring-text-author {
       font-size: 16px; }
 
@@ -68,9 +74,7 @@ hr {
     -webkit-transform: rotate(360deg); } }
 .hero-btns button {
   margin-top: 50px;
-  border-radius: 2px;
   background: none;
-  font-size: 18px;
   border: none;
   padding: 10px 20px; }
   .hero-btns button:first-child {
@@ -80,8 +84,17 @@ hr {
     color: #fff; }
 
 .image-wrapper img {
-  height: 500px;
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%); }
+  .image-wrapper img:hover {
+    -webkit-filter: grayscale(0%);
+    filter: grayscale(0%); }
+
+.modal-content {
+  background: none;
+  border-radius: 0;
+  border: none;
+  -webkit-box-shadow: none;
+  box-shadow: none; }
 
 /*# sourceMappingURL=main.css.map */
