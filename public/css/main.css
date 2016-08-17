@@ -43,6 +43,8 @@ ul {
       width: 200px;
       padding: 10px 20px;
       transition: .1s; }
+      .hero .hero-right button:hover {
+        background-color: #7cd0f5; }
 
 .ring-wrapper {
   z-index: -1;
@@ -99,6 +101,15 @@ ul {
   position: absolute;
   bottom: 0;
   width: 100%;
-  height: 40px; }
+  height: 50px; }
+  .footer li {
+    margin-right: 20px; }
+    .footer li img {
+      width: 20px;
+      transition: .1s; }
+      .footer li img:hover {
+        -ms-transform: scale(1.1);
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1); }
 
 /*# sourceMappingURL=main.css.map */

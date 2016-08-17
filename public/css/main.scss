@@ -58,7 +58,7 @@ ul {
       padding: 10px 20px;
       transition: .1s;
       &:hover {
-
+        background-color: lighten($blue, 20%);
       }
     }
   }
@@ -127,5 +127,17 @@ ul {
   position: absolute;
   bottom: 0;
   width: 100%;
-  height: 40px;
+  height: 50px;
+  li {
+    margin-right: 20px;
+    img {
+      width: 20px;
+      transition: .1s;
+      &:hover {
+        -ms-transform: scale(1.1);
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+      }
+    }
+  }
 }
