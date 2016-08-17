@@ -9,73 +9,69 @@
     <link rel="stylesheet" href="public/css/main.css">
   </head>
   <body>
-  <div class="hero">
-    <div class="hero-title">Life<br>In<br><span class="color-teal">Four</span><br>Seasons</div>
-    <div class="hero-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil molestias, voluptatibus debitis suscipit, neque culpa provident iste odit officia, soluta consequatur deserunt incidunt. Sapiente maxime, sit quam, voluptatum tempore dicta.</div>
-    <div class="ring-wrapper">
-      <div class="ring"></div>
-      <div class="ring"></div>
-      <div class="ring"></div>
-      <div class="ring"></div>
-      <div class="ring"></div>
-      <div class="ring-text">
-        <span>"People do not need guidance,<br>they need <span class="color-teal">awakening</span>."</span><br>
-        <span class="ring-text-author">- J. Krishnamurti</span>
-      </div>
-    </div>
-    <div class="hero-btns">
-      <button data-toggle="modal" data-target="#teaser-one">Teaser I</button>
-      <button data-toggle="modal" data-target="#teaser-two">Teaser II</button>
-    </div>
-  </div>
-  <div class="container">
-    <hr>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi quam, asperiores consectetur dicta repudiandae ullam provident distinctio cum repellendus. Aliquid assumenda voluptate perferendis animi soluta facere placeat incidunt fugiat maxime.</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi quam, asperiores consectetur dicta repudiandae ullam provident distinctio cum repellendus. Aliquid assumenda voluptate perferendis animi soluta facere placeat incidunt fugiat maxime.</p>
-    <hr>
-    <div class="row">
-      <div class="col-md-3">
-        <div class="image-wrapper">
-          <img class="img-responsive" src="public/img/spring.jpg" alt="Spring">
+    <div class="container">
+      <div class="hero">
+        <div class="hero-title-logo">
+          <img src="public/img/wake-up-logo.png" alt="Wake Up Logo">
+          <span>Life In<br><span class="color-blue">Four</span> Seasons</span>
+          <hr>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque blanditiis quia ab, enim hic, non nisi consequatur nemo deserunt, velit atque aperiam reiciendis earum est sunt vitae eum impedit quaerat.</p>
         </div>
-      </div>
-      <div class="col-md-3">
-        <div class="image-wrapper">
-          <img class="img-responsive" src="public/img/summer.jpg" alt="Summer">
+        <div class="hero-right">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil molestias, voluptatibus debitis suscipit, neque culpa provident iste odit officia, soluta consequatur deserunt incidunt. Sapiente maxime, sit quam, voluptatum tempore dicta.</p>
+          <ul>
+            <li><button data-toggle="modal" data-target="#teaser-two">Images</button></li>
+            <li><button data-toggle="modal" data-target="#teaser-one">Video</button></li>
+          </ul>
         </div>
-      </div>
-      <div class="col-md-3">
-        <div class="image-wrapper">
-          <img class="img-responsive" src="public/img/autumn.jpg" alt="Autumn">
-        </div>
-      </div>
-      <div class="col-md-3">
-        <div class="image-wrapper">
-          <img class="img-responsive" src="public/img/winter.jpg" alt="Winter">
+        <div class="ring-wrapper">
+          <div class="ring"></div>
+          <div class="ring"></div>
+          <div class="ring"></div>
+          <div class="ring"></div>
+          <div class="ring"></div>
+          <div class="ring-text">
+            <span>"People do not need guidance,<br>they need <span class="color-blue">awakening</span>."</span><br>
+            <span class="ring-text-author">- J. Krishnamurti</span>
+          </div>
         </div>
       </div>
     </div>
-  </div>
+    <div class="footer">
+      <div class="container">
+        <ul class="list-inline">
+          <li>
+            <a href="">Facebook</a>
+          </li>
+          <li>
+            <a href="">Twitter</a>
+          </li>
+        </ul>  
+      </div>
 
-  <div class="modal fade" id="teaser-one" tabindex="-1" role="dialog" aria-labelledby="teaserOne">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-body">
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/qQtZ8S-NzyM?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
-        </div>
-      </div>
     </div>
-  </div>
 
-  <div class="modal fade" id="teaser-two" tabindex="-1" role="dialog" aria-labelledby="teaserTwo">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-body">
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/OSAf0Ol6U9w?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+    <div class="modal fade" id="teaser-one" tabindex="-1" role="dialog" aria-labelledby="teaserOne">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-body">
+            <div>Trailer</div>
+             <iframe width="100%" height="315" src="https://www.youtube.com/embed/NdeWWNGaBxQ?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+             <div>Some other videos below...</div>
+          </div>
         </div>
       </div>
     </div>
-  </div>
+
+    <div class="modal fade" id="teaser-two" tabindex="-1" role="dialog" aria-labelledby="teaserTwo">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-body">
+            Gallery
+          </div>
+        </div>
+      </div>
+    </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>

@@ -1,48 +1,71 @@
 @import 'https://fonts.googleapis.com/css?family=Cormorant+Garamond:300,500';
 
-$teal: #0fafc3;
+$blue: #1daeee;
 $base-font-color: #555;
 $white: #fff;
 $black: #000;
 
-.color-teal {
-  color: $teal;
+.color-blue {
+  color: $blue;
 }
 
+html {
+  min-height: 100%;
+}
 body {
   color: $base-font-color;
   font-family: 'Cormorant Garamond', serif;
   font-size: 20px;
-}
-hr {
-  margin-top: 50px;
-  margin-bottom: 50px;
 }
 button {
   &:focus {
     outline: none;
   }
 }
+ul {
+  list-style-type: none;
+}
 
 .hero {
+  margin-top: 50px;
   text-align: center;
-  .hero-title {
+  .hero-title-logo {
     float: left;
-    font-size: 32px;
-    padding: 20px 0 0 20px;
-    letter-spacing: 5px;
     text-align: left;
+    img {
+      width: 150px;
+      display: block;
+      margin-bottom: 20px;
+    }
+    span {
+      font-size: 32px;
+      letter-spacing: 5px;
+    }
+    p {
+      width: 250px;
+    }
   }
-  .hero-description {
-    // width: 200px;
+  .hero-right {
     float: right;
-    padding: 20px 20px 0 0;
     text-align: right;
-    width: 200px;
+    width: 250px;
+    button {
+      border: none;
+      background-color: $blue;
+      color: $white;
+      margin-top: 50px;
+      width: 200px;
+      padding: 10px 20px;
+      transition: .1s;
+      &:hover {
+
+      }
+    }
   }
 }
 
 .ring-wrapper {
+  z-index: -1;
   position: relative;
   width: 100%;
   height: 500px;
@@ -93,39 +116,16 @@ button {
 	100% {-webkit-transform: rotate(360deg);}
 }
 
-
-.hero-btns {
-  button {
-    margin-top: 50px;
-    // border-radius: 4px;
-    background: none;
-    border: none;
-    padding: 10px 20px;
-    &:first-child {
-      margin-right: 100px;
-    }
-    &:hover {
-      background-color: #0fafc3;
-      color: $white;
-    }
-  }
-}
-
-.image-wrapper {
-  img {
-    -webkit-filter: grayscale(100%);
-    filter: grayscale(100%);
-    &:hover {
-      -webkit-filter: grayscale(0%);
-      filter: grayscale(0%);
-    }
-  }
-}
-
 .modal-content {
-  background: none;
   border-radius: 0;
   border: none;
   -webkit-box-shadow: none;
   box-shadow: none;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 40px;
 }

@@ -1,34 +1,51 @@
 @import "https://fonts.googleapis.com/css?family=Cormorant+Garamond:300,500";
-.color-teal {
-  color: #0fafc3; }
+.color-blue {
+  color: #1daeee; }
+
+html {
+  min-height: 100%; }
 
 body {
   color: #555;
   font-family: 'Cormorant Garamond', serif;
   font-size: 20px; }
 
-hr {
-  margin-top: 50px;
-  margin-bottom: 50px; }
-
 button:focus {
   outline: none; }
 
+ul {
+  list-style-type: none; }
+
 .hero {
+  margin-top: 50px;
   text-align: center; }
-  .hero .hero-title {
+  .hero .hero-title-logo {
     float: left;
-    font-size: 32px;
-    padding: 20px 0 0 20px;
-    letter-spacing: 5px;
     text-align: left; }
-  .hero .hero-description {
+    .hero .hero-title-logo img {
+      width: 150px;
+      display: block;
+      margin-bottom: 20px; }
+    .hero .hero-title-logo span {
+      font-size: 32px;
+      letter-spacing: 5px; }
+    .hero .hero-title-logo p {
+      width: 250px; }
+  .hero .hero-right {
     float: right;
-    padding: 20px 20px 0 0;
     text-align: right;
-    width: 200px; }
+    width: 250px; }
+    .hero .hero-right button {
+      border: none;
+      background-color: #1daeee;
+      color: #fff;
+      margin-top: 50px;
+      width: 200px;
+      padding: 10px 20px;
+      transition: .1s; }
 
 .ring-wrapper {
+  z-index: -1;
   position: relative;
   width: 100%;
   height: 500px;
@@ -72,29 +89,16 @@ button:focus {
     -webkit-transform: rotate(0deg); }
   100% {
     -webkit-transform: rotate(360deg); } }
-.hero-btns button {
-  margin-top: 50px;
-  background: none;
-  border: none;
-  padding: 10px 20px; }
-  .hero-btns button:first-child {
-    margin-right: 100px; }
-  .hero-btns button:hover {
-    background-color: #0fafc3;
-    color: #fff; }
-
-.image-wrapper img {
-  -webkit-filter: grayscale(100%);
-  filter: grayscale(100%); }
-  .image-wrapper img:hover {
-    -webkit-filter: grayscale(0%);
-    filter: grayscale(0%); }
-
 .modal-content {
-  background: none;
   border-radius: 0;
   border: none;
   -webkit-box-shadow: none;
   box-shadow: none; }
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 40px; }
 
 /*# sourceMappingURL=main.css.map */
