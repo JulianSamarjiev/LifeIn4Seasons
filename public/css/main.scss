@@ -1,11 +1,11 @@
-@import 'https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700';
+@import 'https://fonts.googleapis.com/css?family=Raleway:400,700';
 
 $black: #000;
 $base-font-color: #555;
 $white: #fff;
 
 body {
-  font-family: 'Roboto Condensed', sans-serif;
+  font-family: 'Raleway', sans-serif;
   color: $base-font-color;
 }
 
@@ -23,7 +23,7 @@ a {
   }
 }
 p {
-  margin: 30px 0;
+  margin: 20px 0;
 }
 
 svg {
