@@ -1,19 +1,12 @@
-@import 'https://fonts.googleapis.com/css?family=Raleway:400,700';
+@import 'https://fonts.googleapis.com/css?family=Cormorant+Garamond:300,500';
 
-$black: #000;
+$blue: #1daeee;
 $base-font-color: #555;
 $white: #fff;
+$black: #000;
 
-body {
-  font-family: 'Raleway', sans-serif;
-  color: $base-font-color;
-}
-
-body,
-html {
-  height:100%;
-  margin:0;
-  padding:0;
+.color-blue {
+  color: $blue;
 }
 a {
   color: inherit;
@@ -26,81 +19,135 @@ p {
   margin: 20px 0;
 }
 
-svg {
-  background: url('../img/spring.jpg');
-  background-size: cover;
-  width: 100%;
-  height: auto;
-  display: block;
-  margin: 10px auto;
-  &:hover {
-    cursor: pointer;
-    text {
-      transition: font-size .4s ease-in;
-      font-size: 600px;
+html {
+  min-height: 100%;
+}
+body {
+  color: $base-font-color;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 20px;
+}
+button {
+  &:focus {
+    outline: none;
+  }
+}
+ul {
+  list-style-type: none;
+}
+
+.hero {
+  margin-top: 50px;
+  text-align: center;
+  .hero-title-logo {
+    float: left;
+    text-align: left;
+    img {
+      width: 150px;
+      display: block;
+      margin-bottom: 20px;
+    }
+    span {
+      font-size: 32px;
+      letter-spacing: 5px;
+    }
+    p {
+      width: 250px;
+    }
+  }
+  .hero-right {
+    float: right;
+    text-align: right;
+    width: 250px;
+    button {
+      border: none;
+      background-color: $blue;
+      color: $white;
+      margin-top: 50px;
+      width: 200px;
+      padding: 10px 20px;
+      transition: .1s;
+      &:hover {
+        background-color: lighten($blue, 20%);
+      }
     }
   }
 }
-text {
-  font-size: 12px;
-  transition: font-size .4s ease-out;
-  font-weight: 900;
-  font-family: arial;
+
+.ring-wrapper {
+  z-index: -1;
+  position: relative;
+  width: 100%;
+  height: 500px;
+  margin: 0 auto;
+  .ring {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 50px auto 0;
+    width: 450px;
+    height: 430px;
+    border-radius: 50%;
+    border: 1px solid rgba(0,0,0,.2);
+    -webkit-animation: spin 6s infinite linear;
+    &:nth-child(2) {
+      width: 434px;
+      height: 444px;
+      border: 1px solid rgba(0,0,0,.3);
+    }
+    &:nth-child(3) {
+      width: 444px;
+      height: 438px;
+      border: 1px solid rgba(0,0,0,.4);
+    }
+    &:nth-child(4) {
+      width: 443px;
+      height: 432px;
+      border: 1px solid rgba(0,0,0,.5);
+    }
+    &:nth-child(5) {
+      width: 450px;
+      height: 439px;
+      border: 1px solid rgba(0,0,0,.6);
+    }
+  }
+  .ring-text {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 230px auto 0;
+    .ring-text-author {
+      font-size: 16px;
+    }
+  }
+}
+@-webkit-keyframes spin {
+	0%  {-webkit-transform: rotate(0deg);}
+	100% {-webkit-transform: rotate(360deg);}
 }
 
-.summer {
-  svg {
-    background: url('../img/summer.jpg');
-    background-size: cover;
-  }
-}
-.autumn {
-  svg {
-    background: url('../img/autumn.jpg');
-    background-size: cover;
-  }
-}
-.winter {
-  svg {
-    background: url('../img/winter.jpg');
-    background-size: cover;
-  }
-}
-.content-area {
-  margin: 20px 0;
-  font-size: 18px;
-  letter-spacing: 1px;
-}
-.social-icons {
-  img {
-    margin: 20px 10px 0 0;
-    height: 20px;
-  }
-}
-.trailer-modal {
-  background: rgba(0,0,0,.8);
-}
 .modal-content {
-  text-align: center;
-  background: none;
+  border-radius: 0;
   border: none;
   -webkit-box-shadow: none;
   box-shadow: none;
 }
-.interactive-btns {
-  margin-top: 30px;
-  ul {
-    list-style-type: none;
-    padding-left: 0;
-  }
-  div {
-    border-bottom: 1px solid lighten($black, 80%);
-    text-align: center;
-    padding: 10px 20px;
-    margin-bottom: 20px;
-    text-transform: uppercase;
-    &:hover {
-      border-bottom: 1px solid $black;
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+  li {
+    margin-right: 20px;
+    img {
+      width: 20px;
+      transition: .1s;
+      &:hover {
+        -ms-transform: scale(1.1);
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+      }
     }
   }
 }

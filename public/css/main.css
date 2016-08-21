@@ -1,13 +1,6 @@
-@import "https://fonts.googleapis.com/css?family=Raleway:400,700";
-body {
-  font-family: 'Raleway', sans-serif;
-  color: #555; }
-
-body,
-html {
-  height: 100%;
-  margin: 0;
-  padding: 0; }
+@import "https://fonts.googleapis.com/css?family=Cormorant+Garamond:300,500";
+.color-blue {
+  color: #1daeee; }
 
 a {
   color: inherit; }
@@ -18,68 +11,114 @@ a {
 p {
   margin: 20px 0; }
 
-svg {
-  background: url("../img/spring.jpg");
-  background-size: cover;
+html {
+  min-height: 100%; }
+
+body {
+  color: #555;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 20px; }
+
+button:focus {
+  outline: none; }
+
+ul {
+  list-style-type: none; }
+
+.hero {
+  margin-top: 50px;
+  text-align: center; }
+  .hero .hero-title-logo {
+    float: left;
+    text-align: left; }
+    .hero .hero-title-logo img {
+      width: 150px;
+      display: block;
+      margin-bottom: 20px; }
+    .hero .hero-title-logo span {
+      font-size: 32px;
+      letter-spacing: 5px; }
+    .hero .hero-title-logo p {
+      width: 250px; }
+  .hero .hero-right {
+    float: right;
+    text-align: right;
+    width: 250px; }
+    .hero .hero-right button {
+      border: none;
+      background-color: #1daeee;
+      color: #fff;
+      margin-top: 50px;
+      width: 200px;
+      padding: 10px 20px;
+      transition: .1s; }
+      .hero .hero-right button:hover {
+        background-color: #7cd0f5; }
+
+.ring-wrapper {
+  z-index: -1;
+  position: relative;
   width: 100%;
-  height: auto;
-  display: block;
-  margin: 10px auto; }
-  svg:hover {
-    cursor: pointer; }
-    svg:hover text {
-      transition: font-size .4s ease-in;
-      font-size: 600px; }
+  height: 500px;
+  margin: 0 auto; }
+  .ring-wrapper .ring {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 50px auto 0;
+    width: 450px;
+    height: 430px;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    -webkit-animation: spin 6s infinite linear; }
+    .ring-wrapper .ring:nth-child(2) {
+      width: 434px;
+      height: 444px;
+      border: 1px solid rgba(0, 0, 0, 0.3); }
+    .ring-wrapper .ring:nth-child(3) {
+      width: 444px;
+      height: 438px;
+      border: 1px solid rgba(0, 0, 0, 0.4); }
+    .ring-wrapper .ring:nth-child(4) {
+      width: 443px;
+      height: 432px;
+      border: 1px solid rgba(0, 0, 0, 0.5); }
+    .ring-wrapper .ring:nth-child(5) {
+      width: 450px;
+      height: 439px;
+      border: 1px solid rgba(0, 0, 0, 0.6); }
+  .ring-wrapper .ring-text {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 230px auto 0; }
+    .ring-wrapper .ring-text .ring-text-author {
+      font-size: 16px; }
 
-text {
-  font-size: 12px;
-  transition: font-size .4s ease-out;
-  font-weight: 900;
-  font-family: arial; }
-
-.summer svg {
-  background: url("../img/summer.jpg");
-  background-size: cover; }
-
-.autumn svg {
-  background: url("../img/autumn.jpg");
-  background-size: cover; }
-
-.winter svg {
-  background: url("../img/winter.jpg");
-  background-size: cover; }
-
-.content-area {
-  margin: 20px 0;
-  font-size: 18px;
-  letter-spacing: 1px; }
-
-.social-icons img {
-  margin: 20px 10px 0 0;
-  height: 20px; }
-
-.trailer-modal {
-  background: rgba(0, 0, 0, 0.8); }
-
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(360deg); } }
 .modal-content {
-  text-align: center;
-  background: none;
+  border-radius: 0;
   border: none;
   -webkit-box-shadow: none;
   box-shadow: none; }
 
-.interactive-btns {
-  margin-top: 30px; }
-  .interactive-btns ul {
-    list-style-type: none;
-    padding-left: 0; }
-  .interactive-btns div {
-    border-bottom: 1px solid #cccccc;
-    text-align: center;
-    padding: 10px 20px;
-    margin-bottom: 20px;
-    text-transform: uppercase; }
-    .interactive-btns div:hover {
-      border-bottom: 1px solid #000; }
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 50px; }
+  .footer li {
+    margin-right: 20px; }
+    .footer li img {
+      width: 20px;
+      transition: .1s; }
+      .footer li img:hover {
+        -ms-transform: scale(1.1);
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1); }
 
 /*# sourceMappingURL=main.css.map */
