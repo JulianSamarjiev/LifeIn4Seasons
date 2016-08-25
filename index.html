@@ -23,7 +23,7 @@
                   <text x="25" text-anchor="middle" y="50" dy="0">E</text>
                 </mask>
               </defs>
-              <rect x="0.5" y="0.5" width="49" height="49" mask="url(#mask1)" fill-opacity="1" fill="#fff"/>
+              <rect x="0.5" y="0.5" width="49" height="49" mask="url(#mask1)" fill-opacity=".9" fill="#fff"/>
             </svg>
           </div>
         </div>
@@ -37,7 +37,7 @@
                   <text x="15" text-anchor="middle" y="50" dy="0">N</text>
                 </mask>
               </defs>
-              <rect x="0.5" y="0.5" width="49" height="49" mask="url(#mask2)" fill-opacity="1" fill="#fff"/>
+              <rect x="0.5" y="0.5" width="49" height="49" mask="url(#mask2)" fill-opacity=".9" fill="#fff"/>
             </svg>
           </div>
         </div>
@@ -53,7 +53,7 @@
                   <text x="31" text-anchor="middle" y="50" dy="0">R</text>
                 </mask>
               </defs>
-              <rect x="0.5" y="0.5" width="49" height="49" mask="url(#mask3)" fill-opacity="1" fill="#fff"/>
+              <rect x="0.5" y="0.5" width="49" height="49" mask="url(#mask3)" fill-opacity=".9" fill="#fff"/>
             </svg>
           </div>
         </div>
@@ -72,54 +72,72 @@
                   <text x="47" text-anchor="middle" y="50" dy="0">S</text>
                 </mask>
               </defs>
-              <rect x="0.5" y="0.5" width="49" height="49" mask="url(#mask4)" fill-opacity="1" fill="#fff"/>
+              <rect x="0.5" y="0.5" width="49" height="49" mask="url(#mask4)" fill-opacity=".9" fill="#fff"/>
             </svg>
           </div>
         </div>
       </div>
     </div>
     <div class="container">
-      <div class="content-area">
+      <div class="content-wrapper">
         <div class="row">
           <div class="col-md-6">
-            <h2>Wake Up Campaign</h2>
             <p>Project description, consectetur adipisicing elit. Enim unde maiores, quasi voluptatum saepe laborum totam doloremque necessitatibus, pariatur omnis dolorem quibusdam temporibus tempora dignissimos sunt eius dolores repellendus aliquam.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto explicabo iure non aut quas aliquam ducimus perspiciatis, dolore earum, iste quibusdam ipsum nihil provident sunt optio ad sit eius in.</p>
+            <p>Project description, consectetur adipisicing elit. Enim unde maiores, quasi voluptatum saepe laborum totam doloremque necessitatibus, pariatur omnis dolorem quibusdam temporibus tempora dignissimos sunt eius dolores repellendus aliquam.</p>
+            <p>Project description, consectetur adipisicing elit. Enim unde maiores, quasi voluptatum saepe laborum totam doloremque necessitatibus, pariatur omnis dolorem quibusdam temporibus tempora dignissimos sunt eius dolores repellendus aliquam.</p>
           </div>
           <div class="col-md-6">
             <div class="interactive-btns">
               <ul>
                 <li>
-                  <a href="#"><div>Trailer</div></a>
+                  <div data-toggle="modal" data-target="#trailerModal">Trailer</div>
                 </li>
                 <li>
-                  <a href="#"><div>Gallery</div></a>
+                  <div data-toggle="modal" data-target="#galleryModal">Gallery</div>
                 </li>
                 <li>
-                  <a href="#"><div>Videos</div></a>
+                  <div data-toggle="modal" data-target="#videosModal">Videos</div>
                 </li>
-              </ul>
-            </div>
-            <div class="social-icons">
-              <ul class="list-inline">
-                <li><a href="#"><img src="public/img/facebook.svg" alt="Facebook"></a></li>
-                <li><a href="#"><img src="public/img/twitter.svg" alt="Twitter"></a></li>
-                <li><a href="#"><img src="public/img/youtube.svg" alt="YouTube"></a></li>
-                <li><a href="#"><img src="public/img/instagram.svg" alt="Instagram"></a></li>
               </ul>
             </div>
           </div>
         </div>
-      </div>
-      <div class="footer">
-
-      </div>
-    </div>
-    <div class="modal fade trailer-modal" tabindex="-1" role="dialog" aria-labelledby="TrailerModal">
-      <div class="modal-dialog modal-md" role="document">
-        <div class="modal-content">
-          <div>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/NdeWWNGaBxQ?rel=0&amp;&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+        <div class="modal fade" id="trailerModal" tabindex="-1" role="dialog" aria-labelledby="TrailerModal">
+          <div class="modal-dialog modal-md" role="document">
+            <div class="modal-content">
+              <div>
+                <div>Trailer</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal fade" id="galleryModal" tabindex="-1" role="dialog" aria-labelledby="TrailerModal">
+          <div class="modal-dialog modal-md" role="document">
+            <div class="modal-content">
+              <div>
+                <div>Gallery</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal fade" id="videosModal" tabindex="-1" role="dialog" aria-labelledby="TrailerModal">
+          <div class="modal-dialog modal-md" role="document">
+            <div class="modal-content">
+              <div>
+                <div>Videos</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer">
+          <div class="social-icons">
+            <ul class="list-inline">
+              <li><a href="#"><img src="public/img/facebook.svg" alt="Facebook"></a></li>
+              <li><a href="#"><img src="public/img/twitter.svg" alt="Twitter"></a></li>
+              <li><a href="#"><img src="public/img/youtube.svg" alt="YouTube"></a></li>
+              <li><a href="#"><img src="public/img/instagram.svg" alt="Instagram"></a></li>
+              <li>&#169;Life In 4 Seasons, Wake Up Campaign, development by Tuxedo</li>
+            </ul>
           </div>
         </div>
       </div>
